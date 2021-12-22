@@ -13,11 +13,13 @@ namespace Kurse
     public partial class Конструктор : Form
     {
         private User authorizedUser;
+        private Аккаунт.UserUpdete userUpdete;
 
-        public Конструктор(User authorizedUser)
+        public Конструктор(User authorizedUser, Аккаунт.UserUpdete userUpdete)
         {
             InitializeComponent();
             this.authorizedUser = authorizedUser;
+            this.userUpdete = userUpdete;
         }
         public Конструктор()
         {
@@ -32,7 +34,7 @@ namespace Kurse
         public class Const
         {
             //Страна
-            public int egipet = 1;
+            public int egipet = 5;
             public int turciya = 1;
             public int tayland = 1;
             public int daminikana = 1;
@@ -130,7 +132,7 @@ namespace Kurse
         {
             var konstruktorEgipet = new Const();
             this.Hide();
-            Консруктор_Египет conE = new Консруктор_Египет(konstruktorEgipet, authorizedUser);
+            Консруктор_Египет conE = new Консруктор_Египет(konstruktorEgipet, authorizedUser, userUpdete);
             conE.Show();
         }
     }

@@ -19,23 +19,22 @@ namespace Kurse
 
         MySqlDataAdapter adapter = new MySqlDataAdapter();
         private User authorizedUser;
-        private int width = 10;
-        private int height = 10;
+        private Аккаунт.UserUpdete userUpdete;
 
         public Готовые_туры()
         {
             InitializeComponent();
         }
-        public Готовые_туры(User authorizedUser)
+        public Готовые_туры(User authorizedUser, Аккаунт.UserUpdete userUpdete)
         {
             InitializeComponent();
             this.authorizedUser = authorizedUser;
+            this.userUpdete = userUpdete;
 
         }
 
         private void Готовые_туры_Load(object sender, EventArgs e)
         {
-            Balance.Text = authorizedUser.Balance + " Руб.";
 
         }
 
@@ -43,7 +42,8 @@ namespace Kurse
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Египет eg = new Египет(authorizedUser);
+
+            Египет eg = new Египет(authorizedUser, userUpdete);
             eg.Show();
 
         }

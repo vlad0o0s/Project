@@ -19,26 +19,29 @@ namespace Kurse
 
         MySqlDataAdapter adapter = new MySqlDataAdapter();
         private User authorizedUser;
+        private Аккаунт.UserUpdete userUpdete;
 
         public Пополнение()
         {
             InitializeComponent();
         }
-        public Пополнение(User authorizedUser)
+        public Пополнение(User authorizedUser, Аккаунт.UserUpdete userUpdete)
         {
             InitializeComponent();
             this.authorizedUser = authorizedUser;
+            this.userUpdete = userUpdete;
 
         }
         private void Пополнение_Load(object sender, EventArgs e)
         {
-           
+            Console.WriteLine(userUpdete.Balance);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int y = Convert.ToInt32(authorizedUser.Balance);
+            int y = Convert.ToInt32(userUpdete.Balance);
             int x = Convert.ToInt32(textBox1.Text);
+
             int next = y + x;
 
             if (x < 0)
@@ -54,6 +57,9 @@ namespace Kurse
             adapter.SelectCommand = command;
             adapter.Fill(table);
             MessageBox.Show("Вы пополнили кошелек на сумму " + x + " Руб.");
+            this.Hide();
+            Аккаунт аккаунт = new Аккаунт(authorizedUser);
+            аккаунт.Show();
 
         }
 

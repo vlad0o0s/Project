@@ -64,15 +64,12 @@ namespace Kurse
     public class User
     {
         public string FIO;
-        public string Balance;
         public string login;
-        public string turs;
+
         public User(DataRow dataRow)
         {   
             login = dataRow[1] as string;
             FIO = dataRow[3] as string;
-            Balance = dataRow[4] as string;
-            turs = dataRow[5] as string;
         }
 
 

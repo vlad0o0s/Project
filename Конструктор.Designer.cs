@@ -169,6 +169,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
             this.Name = "Конструктор";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Конструктор";
             this.Load += new System.EventHandler(this.Конструктор_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

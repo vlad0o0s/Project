@@ -20,16 +20,18 @@ namespace Kurse
         MySqlDataAdapter adapter = new MySqlDataAdapter();
 
         private User authorizedUser;
+        private Аккаунт.UserUpdete userUpdete;
 
         public Египет()
         {
             InitializeComponent();
         }
 
-        public Египет(User authorizedUser)
+        public Египет(User authorizedUser, Аккаунт.UserUpdete userUpdete)
         {
             InitializeComponent();
             this.authorizedUser = authorizedUser;
+            this.userUpdete = userUpdete;
 
         }
 
@@ -43,7 +45,7 @@ namespace Kurse
             var TursPrice = new Turs(table.Rows[0]);
             string t1 = TursPrice.Price.ToString();
             label1.Text = t1 + " Руб.";
-            Balance.Text = authorizedUser.Balance + " Руб."; 
+            Balance.Text = userUpdete.Balance + " Руб."; 
 
         }
 
@@ -87,7 +89,7 @@ namespace Kurse
             {
                 var TursPrice = new Turs(table.Rows[0]);
                 int t1 = TursPrice.Price;
-                int x = Convert.ToInt32(authorizedUser.Balance);
+                int x = Convert.ToInt32(userUpdete.Balance);
                 int y = t1;
                 int id_ob = Convert.ToInt32(authorizedUser.login);
 
@@ -102,8 +104,6 @@ namespace Kurse
                         account.Show();
                     }
 
-
-
                     return;
                 }
                 int Res = x - y;
@@ -117,6 +117,9 @@ namespace Kurse
                 adapter.Fill(table);
 
                 MessageBox.Show("Вы успешно купили тур по Египту");
+                this.Hide();
+                Аккаунт аккаунт = new Аккаунт(authorizedUser);
+                аккаунт.Show();
             }
         }
         

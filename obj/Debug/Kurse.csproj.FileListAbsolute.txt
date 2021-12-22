@@ -165,3 +165,5 @@ C:\Users\Влад\Source\Repos\vlad0o0s\Project\obj\Debug\Kurse.csproj.CopyCompl
 C:\Users\Влад\Source\Repos\vlad0o0s\Project\obj\Debug\Kurse.exe
 C:\Users\Влад\Source\Repos\vlad0o0s\Project\obj\Debug\Kurse.pdb
 C:\Users\Влад\Source\Repos\vlad0o0s\Project\obj\Debug\Kurse.Консруктор_Египет.resources
+C:\Users\FlitP\Source\Repos\vlad0o0s\Project\obj\Debug\Kurse.Консруктор_Египет.resources
+C:\Users\FlitP\Source\Repos\vlad0o0s\Project\obj\Debug\Kurse.Конструктор.resources
