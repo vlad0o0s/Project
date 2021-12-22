@@ -37,7 +37,7 @@ namespace Kurse
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            string Next = textBox1.Text;
             
             string id_ob = authorizedUser.login;
             MySqlCommand command = new MySqlCommand("UPDATE `users` SET `Balance` = @popolnenie WHERE `login` = @id_ob", db.getConnection());
