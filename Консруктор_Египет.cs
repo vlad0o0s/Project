@@ -29,11 +29,12 @@ namespace Kurse
 
         private void Консруктор_Египет_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             int a = konstruktorEgipet.egipet;
             int b = 0;
             int c = 0;
@@ -43,6 +44,7 @@ namespace Kurse
                 b = konstruktorEgipet.e_name1;
                 return;
             }
+            Console.WriteLine(b);
             if (comboBox1.Text == "Александрия")
             {
                 b = konstruktorEgipet.e_name2;
@@ -83,8 +85,9 @@ namespace Kurse
                 d = konstruktorEgipet.ex3;
                 return;
             }
-
+            
             int res = a + b + c + d;
+            Console.WriteLine(res);
             MessageBox.Show("Сумма к оплате " + res + " Руб.");
         }
     }

@@ -32,63 +32,39 @@ namespace Kurse
         public class Const
         {
             //Страна
-            public int egipet;
-            public int turciya;
-            public int tayland;
-            public int daminikana;
+            public int egipet = 1;
+            public int turciya = 1;
+            public int tayland = 1;
+            public int daminikana = 1;
             //Город
-            public int e_name1;
-            public int e_name2;
-            public int e_name3;
-            public int e_name4;
+            public int e_name1 = 5;
+            public int e_name2 = 1;
+            public int e_name3 = 1;
 
-            public int tu_name1;
-            public int tu_name2;
-            public int tu_name3;
-            public int tu_name4;
+            public int tu_name1 = 4;
+            public int tu_name2 = 1;
+            public int tu_name3 = 1;
 
-            public int ta_name1;
-            public int ta_name2;
-            public int ta_name3;
-            public int ta_name4;
+            public int ta_name1 = 1;
+            public int ta_name2 = 1;
+            public int ta_name3 = 1;
+            public int ta_name4 = 1;
 
-            public int da_name1;
-            public int da_name2;
-            public int da_name3;
-            public int da_name4;
-            //Отель
-            public int otel1;
-            public int otel2;
-            public int otel3;
+            public int da_name1 = 1;
+            public int da_name2 = 1;
+            public int da_name3 = 1;
+            public int da_name4 = 1;
+            //Отель             
+            public int otel1 = 2;
+            public int otel2 = 1;
+            public int otel3 = 1;
             //Экскурси
-            public int ex1;
-            public int ex2;
-            public int ex3;
+            public int ex1 = 3;
+            public int ex2 = 1;
+            public int ex3 = 1;
             public Const()
             {
-                turciya = 1;
-                tayland = 1;
-                daminikana = 1;
-
-                e_name1 = 1;
-                e_name2 = 1;
-                e_name3 = 1;
-                e_name4 = 1;
-
-                tu_name1 = 1;
-                tu_name2 = 1;
-                tu_name3 = 1;
-                tu_name4 = 1;
-
-                ta_name1 = 1;
-                ta_name2 = 1;
-                ta_name3 = 1;
-                ta_name4 = 1;
-
-                da_name1 = 1;
-                da_name2 = 1;
-                da_name3 = 1;
-                da_name4 = 1;
+                
 
             }
 
