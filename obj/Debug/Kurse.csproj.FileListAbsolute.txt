@@ -1,0 +1,119 @@
+C:\Users\FlitP\source\repos\Kurse\Kurse\obj\Debug\Kurse.csproj.AssemblyReference.cache
+C:\Users\FlitP\source\repos\Kurse\Kurse\obj\Debug\Kurse.csproj.SuggestedBindingRedirects.cache
+C:\Users\FlitP\source\repos\Kurse\Kurse\obj\Debug\Kurse.Form1.resources
+C:\Users\FlitP\source\repos\Kurse\Kurse\obj\Debug\Kurse.Properties.Resources.resources
+C:\Users\FlitP\source\repos\Kurse\Kurse\obj\Debug\Kurse.csproj.GenerateResource.cache
+C:\Users\FlitP\source\repos\Kurse\Kurse\obj\Debug\Kurse.csproj.CoreCompileInputs.cache
+C:\Users\FlitP\source\repos\Kurse\Kurse\bin\Debug\Kurse.exe.config
+C:\Users\FlitP\source\repos\Kurse\Kurse\bin\Debug\Kurse.exe
+C:\Users\FlitP\source\repos\Kurse\Kurse\bin\Debug\Kurse.pdb
+C:\Users\FlitP\source\repos\Kurse\Kurse\bin\Debug\MySqlConnector.dll
+C:\Users\FlitP\source\repos\Kurse\Kurse\bin\Debug\System.Buffers.dll
+C:\Users\FlitP\source\repos\Kurse\Kurse\bin\Debug\System.Memory.dll
+C:\Users\FlitP\source\repos\Kurse\Kurse\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\FlitP\source\repos\Kurse\Kurse\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\FlitP\source\repos\Kurse\Kurse\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\FlitP\source\repos\Kurse\Kurse\bin\Debug\MySqlConnector.xml
+C:\Users\FlitP\source\repos\Kurse\Kurse\bin\Debug\System.Buffers.xml
+C:\Users\FlitP\source\repos\Kurse\Kurse\bin\Debug\System.Memory.xml
+C:\Users\FlitP\source\repos\Kurse\Kurse\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\FlitP\source\repos\Kurse\Kurse\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\FlitP\source\repos\Kurse\Kurse\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\FlitP\source\repos\Kurse\Kurse\obj\Debug\Kurse.csproj.CopyComplete
+C:\Users\FlitP\source\repos\Kurse\Kurse\obj\Debug\Kurse.exe
+C:\Users\FlitP\source\repos\Kurse\Kurse\obj\Debug\Kurse.pdb
+C:\Users\СТУДЕНТ\Downloads\Kurse\Kurse\bin\Debug\Kurse.exe.config
+C:\Users\СТУДЕНТ\Downloads\Kurse\Kurse\bin\Debug\Kurse.exe
+C:\Users\СТУДЕНТ\Downloads\Kurse\Kurse\bin\Debug\Kurse.pdb
+C:\Users\СТУДЕНТ\Downloads\Kurse\Kurse\bin\Debug\MySqlConnector.dll
+C:\Users\СТУДЕНТ\Downloads\Kurse\Kurse\bin\Debug\System.Buffers.dll
+C:\Users\СТУДЕНТ\Downloads\Kurse\Kurse\bin\Debug\System.Memory.dll
+C:\Users\СТУДЕНТ\Downloads\Kurse\Kurse\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\СТУДЕНТ\Downloads\Kurse\Kurse\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\СТУДЕНТ\Downloads\Kurse\Kurse\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\СТУДЕНТ\Downloads\Kurse\Kurse\bin\Debug\MySqlConnector.xml
+C:\Users\СТУДЕНТ\Downloads\Kurse\Kurse\bin\Debug\System.Buffers.xml
+C:\Users\СТУДЕНТ\Downloads\Kurse\Kurse\bin\Debug\System.Memory.xml
+C:\Users\СТУДЕНТ\Downloads\Kurse\Kurse\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\СТУДЕНТ\Downloads\Kurse\Kurse\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\СТУДЕНТ\Downloads\Kurse\Kurse\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\СТУДЕНТ\Downloads\Kurse\Kurse\obj\Debug\Kurse.csproj.AssemblyReference.cache
+C:\Users\СТУДЕНТ\Downloads\Kurse\Kurse\obj\Debug\Kurse.Авторизация.resources
+C:\Users\СТУДЕНТ\Downloads\Kurse\Kurse\obj\Debug\Kurse.Properties.Resources.resources
+C:\Users\СТУДЕНТ\Downloads\Kurse\Kurse\obj\Debug\Kurse.Аккаунт.resources
+C:\Users\СТУДЕНТ\Downloads\Kurse\Kurse\obj\Debug\Kurse.Регистрация.resources
+C:\Users\СТУДЕНТ\Downloads\Kurse\Kurse\obj\Debug\Kurse.csproj.GenerateResource.cache
+C:\Users\СТУДЕНТ\Downloads\Kurse\Kurse\obj\Debug\Kurse.csproj.CoreCompileInputs.cache
+C:\Users\СТУДЕНТ\Downloads\Kurse\Kurse\obj\Debug\Kurse.csproj.CopyComplete
+C:\Users\СТУДЕНТ\Downloads\Kurse\Kurse\obj\Debug\Kurse.exe
+C:\Users\СТУДЕНТ\Downloads\Kurse\Kurse\obj\Debug\Kurse.pdb
+\\sfile\Public$\Студенты\4_КУРС_2021\УД 23.2 Б-18\Коровин\Kurse\Kurse\bin\Debug\Kurse.exe.config
+\\sfile\Public$\Студенты\4_КУРС_2021\УД 23.2 Б-18\Коровин\Kurse\Kurse\bin\Debug\Kurse.exe
+\\sfile\Public$\Студенты\4_КУРС_2021\УД 23.2 Б-18\Коровин\Kurse\Kurse\bin\Debug\Kurse.pdb
+\\sfile\Public$\Студенты\4_КУРС_2021\УД 23.2 Б-18\Коровин\Kurse\Kurse\bin\Debug\MySqlConnector.dll
+\\sfile\Public$\Студенты\4_КУРС_2021\УД 23.2 Б-18\Коровин\Kurse\Kurse\bin\Debug\System.Buffers.dll
+\\sfile\Public$\Студенты\4_КУРС_2021\УД 23.2 Б-18\Коровин\Kurse\Kurse\bin\Debug\System.Memory.dll
+\\sfile\Public$\Студенты\4_КУРС_2021\УД 23.2 Б-18\Коровин\Kurse\Kurse\bin\Debug\System.Numerics.Vectors.dll
+\\sfile\Public$\Студенты\4_КУРС_2021\УД 23.2 Б-18\Коровин\Kurse\Kurse\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+\\sfile\Public$\Студенты\4_КУРС_2021\УД 23.2 Б-18\Коровин\Kurse\Kurse\bin\Debug\System.Threading.Tasks.Extensions.dll
+\\sfile\Public$\Студенты\4_КУРС_2021\УД 23.2 Б-18\Коровин\Kurse\Kurse\bin\Debug\MySqlConnector.xml
+\\sfile\Public$\Студенты\4_КУРС_2021\УД 23.2 Б-18\Коровин\Kurse\Kurse\bin\Debug\System.Buffers.xml
+\\sfile\Public$\Студенты\4_КУРС_2021\УД 23.2 Б-18\Коровин\Kurse\Kurse\bin\Debug\System.Memory.xml
+\\sfile\Public$\Студенты\4_КУРС_2021\УД 23.2 Б-18\Коровин\Kurse\Kurse\bin\Debug\System.Numerics.Vectors.xml
+\\sfile\Public$\Студенты\4_КУРС_2021\УД 23.2 Б-18\Коровин\Kurse\Kurse\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+\\sfile\Public$\Студенты\4_КУРС_2021\УД 23.2 Б-18\Коровин\Kurse\Kurse\bin\Debug\System.Threading.Tasks.Extensions.xml
+\\sfile\Public$\Студенты\4_КУРС_2021\УД 23.2 Б-18\Коровин\Kurse\Kurse\obj\Debug\Kurse.csproj.AssemblyReference.cache
+\\sfile\Public$\Студенты\4_КУРС_2021\УД 23.2 Б-18\Коровин\Kurse\Kurse\obj\Debug\Kurse.Авторизация.resources
+\\sfile\Public$\Студенты\4_КУРС_2021\УД 23.2 Б-18\Коровин\Kurse\Kurse\obj\Debug\Kurse.Properties.Resources.resources
+\\sfile\Public$\Студенты\4_КУРС_2021\УД 23.2 Б-18\Коровин\Kurse\Kurse\obj\Debug\Kurse.Аккаунт.resources
+\\sfile\Public$\Студенты\4_КУРС_2021\УД 23.2 Б-18\Коровин\Kurse\Kurse\obj\Debug\Kurse.Регистрация.resources
+\\sfile\Public$\Студенты\4_КУРС_2021\УД 23.2 Б-18\Коровин\Kurse\Kurse\obj\Debug\Kurse.csproj.GenerateResource.cache
+\\sfile\Public$\Студенты\4_КУРС_2021\УД 23.2 Б-18\Коровин\Kurse\Kurse\obj\Debug\Kurse.csproj.CoreCompileInputs.cache
+\\sfile\Public$\Студенты\4_КУРС_2021\УД 23.2 Б-18\Коровин\Kurse\Kurse\obj\Debug\Kurse.csproj.CopyComplete
+\\sfile\Public$\Студенты\4_КУРС_2021\УД 23.2 Б-18\Коровин\Kurse\Kurse\obj\Debug\Kurse.exe
+\\sfile\Public$\Студенты\4_КУРС_2021\УД 23.2 Б-18\Коровин\Kurse\Kurse\obj\Debug\Kurse.pdb
+C:\Users\FlitP\Desktop\Kurse\bin\Debug\Kurse.exe.config
+C:\Users\FlitP\Desktop\Kurse\bin\Debug\Kurse.exe
+C:\Users\FlitP\Desktop\Kurse\bin\Debug\Kurse.pdb
+C:\Users\FlitP\Desktop\Kurse\bin\Debug\MySqlConnector.xml
+C:\Users\FlitP\Desktop\Kurse\bin\Debug\System.Buffers.xml
+C:\Users\FlitP\Desktop\Kurse\bin\Debug\System.Memory.xml
+C:\Users\FlitP\Desktop\Kurse\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\FlitP\Desktop\Kurse\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\FlitP\Desktop\Kurse\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\FlitP\Desktop\Kurse\obj\Debug\Kurse.csproj.AssemblyReference.cache
+C:\Users\FlitP\Desktop\Kurse\obj\Debug\Kurse.csproj.SuggestedBindingRedirects.cache
+C:\Users\FlitP\Desktop\Kurse\obj\Debug\Kurse.Авторизация.resources
+C:\Users\FlitP\Desktop\Kurse\obj\Debug\Kurse.Properties.Resources.resources
+C:\Users\FlitP\Desktop\Kurse\obj\Debug\Kurse.Аккаунт.resources
+C:\Users\FlitP\Desktop\Kurse\obj\Debug\Kurse.Регистрация.resources
+C:\Users\FlitP\Desktop\Kurse\obj\Debug\Kurse.csproj.GenerateResource.cache
+C:\Users\FlitP\Desktop\Kurse\obj\Debug\Kurse.csproj.CoreCompileInputs.cache
+C:\Users\FlitP\Desktop\Kurse\obj\Debug\Kurse.csproj.CopyComplete
+C:\Users\FlitP\Desktop\Kurse\obj\Debug\Kurse.exe
+C:\Users\FlitP\Desktop\Kurse\obj\Debug\Kurse.pdb
+C:\Users\FlitP\Desktop\Kurse\obj\Debug\Kurse.Готовые_туры.resources
+C:\Users\FlitP\Desktop\Kurse\obj\Debug\Kurse.Египет.resources
+C:\Users\Влад\Desktop\Kurse\bin\Debug\Kurse.exe.config
+C:\Users\Влад\Desktop\Kurse\bin\Debug\Kurse.exe
+C:\Users\Влад\Desktop\Kurse\bin\Debug\Kurse.pdb
+C:\Users\Влад\Desktop\Kurse\bin\Debug\MySqlConnector.xml
+C:\Users\Влад\Desktop\Kurse\bin\Debug\System.Buffers.xml
+C:\Users\Влад\Desktop\Kurse\bin\Debug\System.Memory.xml
+C:\Users\Влад\Desktop\Kurse\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Влад\Desktop\Kurse\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Влад\Desktop\Kurse\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Влад\Desktop\Kurse\obj\Debug\Kurse.csproj.AssemblyReference.cache
+C:\Users\Влад\Desktop\Kurse\obj\Debug\Kurse.csproj.SuggestedBindingRedirects.cache
+C:\Users\Влад\Desktop\Kurse\obj\Debug\Kurse.Авторизация.resources
+C:\Users\Влад\Desktop\Kurse\obj\Debug\Kurse.Properties.Resources.resources
+C:\Users\Влад\Desktop\Kurse\obj\Debug\Kurse.Аккаунт.resources
+C:\Users\Влад\Desktop\Kurse\obj\Debug\Kurse.Готовые_туры.resources
+C:\Users\Влад\Desktop\Kurse\obj\Debug\Kurse.Египет.resources
+C:\Users\Влад\Desktop\Kurse\obj\Debug\Kurse.Регистрация.resources
+C:\Users\Влад\Desktop\Kurse\obj\Debug\Kurse.csproj.GenerateResource.cache
+C:\Users\Влад\Desktop\Kurse\obj\Debug\Kurse.csproj.CoreCompileInputs.cache
+C:\Users\Влад\Desktop\Kurse\obj\Debug\Kurse.csproj.CopyComplete
+C:\Users\Влад\Desktop\Kurse\obj\Debug\Kurse.exe
+C:\Users\Влад\Desktop\Kurse\obj\Debug\Kurse.pdb
+C:\Users\Влад\Desktop\Kurse\obj\Debug\Kurse.Пополнение.resources
