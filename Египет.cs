@@ -43,7 +43,7 @@ namespace Kurse
             var TursPrice = new Turs(table.Rows[0]);
             string t1 = TursPrice.Price.ToString();
             label1.Text = t1 + " Руб.";
-            Balance.Text = authorizedUser.Balance + " Руб."; // СДЕЛАТЬ КОНСТРУКТОР ЧЕРЕЗ ПЕРЕМЕННЫЕ
+            Balance.Text = authorizedUser.Balance + " Руб."; 
 
         }
 

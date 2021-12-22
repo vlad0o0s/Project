@@ -37,14 +37,24 @@ namespace Kurse
 
         private void button1_Click(object sender, EventArgs e)
         {
+            int y = Convert.ToInt32(authorizedUser.Balance);
+            int x = Convert.ToInt32(textBox1.Text);
+            int next = y + x;
 
+            if (x < 0)
+            {
+                MessageBox.Show("ошибка");
+                return;
+            }
             
             string id_ob = authorizedUser.login;
             MySqlCommand command = new MySqlCommand("UPDATE `users` SET `Balance` = @popolnenie WHERE `login` = @id_ob", db.getConnection());
-            command.Parameters.Add("@popolnenie", MySqlDbType.VarChar).Value = Next;
+            command.Parameters.Add("@popolnenie", MySqlDbType.VarChar).Value = next;
             command.Parameters.Add("@id_ob", MySqlDbType.VarChar).Value = id_ob;
             adapter.SelectCommand = command;
             adapter.Fill(table);
+            MessageBox.Show("Вы пополнили кошелек на сумму " + x + " Руб.");
+
         }
 
 
