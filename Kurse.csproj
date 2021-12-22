@@ -113,6 +113,12 @@
     <Compile Include="Египет.Designer.cs">
       <DependentUpon>Египет.cs</DependentUpon>
     </Compile>
+    <Compile Include="Консруктор_Египет.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Консруктор_Египет.Designer.cs">
+      <DependentUpon>Консруктор_Египет.cs</DependentUpon>
+    </Compile>
     <Compile Include="Конструктор.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Египет.resx">
       <DependentUpon>Египет.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Консруктор_Египет.resx">
+      <DependentUpon>Консруктор_Египет.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Конструктор.resx">
       <DependentUpon>Конструктор.cs</DependentUpon>
