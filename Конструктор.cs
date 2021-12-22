@@ -29,39 +29,42 @@ namespace Kurse
 
         }
 
-        public class Constructor
+        public class Const
         {
             //Страна
             public int egipet;
-            int turciya;
-            int tayland;
-            int daminikana;
+            public int turciya;
+            public int tayland;
+            public int daminikana;
             //Город
-            int e_name1;
-            int e_name2;
-            int e_name3;
-            int e_name4;
+            public int e_name1;
+            public int e_name2;
+            public int e_name3;
+            public int e_name4;
 
-            int tu_name1;
-            int tu_name2;
-            int tu_name3;
-            int tu_name4;
+            public int tu_name1;
+            public int tu_name2;
+            public int tu_name3;
+            public int tu_name4;
 
-            int ta_name1;
-            int ta_name2;
-            int ta_name3;
-            int ta_name4;
+            public int ta_name1;
+            public int ta_name2;
+            public int ta_name3;
+            public int ta_name4;
 
-            int da_name1;
-            int da_name2;
-            int da_name3;
-            int da_name4;
+            public int da_name1;
+            public int da_name2;
+            public int da_name3;
+            public int da_name4;
             //Отель
-            int otel1;
-            int otel2;
-            int otel3;
+            public int otel1;
+            public int otel2;
+            public int otel3;
             //Экскурси
-            public Constructor()
+            public int ex1;
+            public int ex2;
+            public int ex3;
+            public Const()
             {
                 turciya = 1;
                 tayland = 1;
@@ -149,9 +152,9 @@ namespace Kurse
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            var konstruktorEgipet = new Constructor();
+            var konstruktorEgipet = new Const();
             this.Hide();
-            Консруктор_Египет conE = new Консруктор_Египет(authorizedUser, konstruktorEgipet);
+            Консруктор_Египет conE = new Консруктор_Египет(konstruktorEgipet, authorizedUser);
             conE.Show();
         }
     }
