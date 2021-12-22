@@ -66,6 +66,13 @@ namespace Kurse
             Пополнение popolnenie = new Пополнение(authorizedUser);
             popolnenie.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Конструктор con = new Конструктор(authorizedUser);
+            con.Show();
+        }
     }
 
 }
