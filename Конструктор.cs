@@ -35,10 +35,7 @@ namespace Kurse
 
         private void Конструктор_Load(object sender, EventArgs e)
         {
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `turs`");
-            adapter.SelectCommand = command;
-            adapter.Fill(table);
-            var konstruktorEgipet = new Const(table.Rows[0]);
+            
 
 
         }
@@ -46,7 +43,7 @@ namespace Kurse
         public class Const
         {
             //Страна
-            public int egipet;
+            public int egipet = 2500;
             public int turciya = 1;
             public int tayland = 1;
             public int daminikana = 1;
@@ -76,12 +73,7 @@ namespace Kurse
             public int ex1 = 3;
             public int ex2 = 1;
             public int ex3 = 1;
-            public Const(DataRow dataRow)
-            {
-                egipet = (int)dataRow[3]; // как вырать конерктный объект?
-
-
-            }
+           
 
         }
 
@@ -143,7 +135,7 @@ namespace Kurse
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            var konstruktorEgipet = new Const(table.Rows[0]);
+            var konstruktorEgipet = new Const();
             this.Hide();
             Консруктор_Египет conE = new Консруктор_Египет(konstruktorEgipet, authorizedUser, userUpdete);
             conE.Show();
