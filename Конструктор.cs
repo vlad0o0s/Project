@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySqlConnector;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,12 @@ namespace Kurse
 {
     public partial class Конструктор : Form
     {
+        DB db = new DB();
+
+        DataTable table = new DataTable();
+
+        MySqlDataAdapter adapter = new MySqlDataAdapter();
+
         private User authorizedUser;
         private Аккаунт.UserUpdete userUpdete;
 
@@ -28,13 +35,18 @@ namespace Kurse
 
         private void Конструктор_Load(object sender, EventArgs e)
         {
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `turs`");
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+            var konstruktorEgipet = new Const(table.Rows[0]);
+
 
         }
 
         public class Const
         {
             //Страна
-            public int egipet = 5;
+            public int egipet;
             public int turciya = 1;
             public int tayland = 1;
             public int daminikana = 1;
@@ -64,9 +76,10 @@ namespace Kurse
             public int ex1 = 3;
             public int ex2 = 1;
             public int ex3 = 1;
-            public Const()
+            public Const(DataRow dataRow)
             {
-                
+                egipet = (int)dataRow[3]; // как вырать конерктный объект?
+
 
             }
 
@@ -130,7 +143,7 @@ namespace Kurse
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            var konstruktorEgipet = new Const();
+            var konstruktorEgipet = new Const(table.Rows[0]);
             this.Hide();
             Консруктор_Египет conE = new Консруктор_Египет(konstruktorEgipet, authorizedUser, userUpdete);
             conE.Show();
