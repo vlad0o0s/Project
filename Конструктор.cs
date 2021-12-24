@@ -36,8 +36,6 @@ namespace Kurse
         private void Конструктор_Load(object sender, EventArgs e)
         {
             
-
-
         }
 
         public class Const
@@ -73,6 +71,7 @@ namespace Kurse
             public int ex1 = 3;
             public int ex2 = 1;
             public int ex3 = 1;
+
            
 
         }
@@ -135,6 +134,7 @@ namespace Kurse
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+
             var konstruktorEgipet = new Const();
             this.Hide();
             Консруктор_Египет conE = new Консруктор_Египет(konstruktorEgipet, authorizedUser, userUpdete);
