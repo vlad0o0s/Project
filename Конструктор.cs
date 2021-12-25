@@ -15,7 +15,8 @@ namespace Kurse
     {
         DB db = new DB();
 
-        DataTable table = new DataTable();
+        DataTable table = new DataTable(); 
+        DataTable table_city = new DataTable();
 
         MySqlDataAdapter adapter = new MySqlDataAdapter();
 
@@ -35,46 +36,27 @@ namespace Kurse
 
         private void Конструктор_Load(object sender, EventArgs e)
         {
-            
+
+
         }
 
-        public class Const
+        public class country
         {
             //Страна
-            public int egipet = 2500;
-            public int turciya = 1;
-            public int tayland = 1;
-            public int daminikana = 1;
-            //Город
-            public int e_name1 = 5;
-            public int e_name2 = 1;
-            public int e_name3 = 1;
-
-            public int tu_name1 = 4;
-            public int tu_name2 = 1;
-            public int tu_name3 = 1;
-
-            public int ta_name1 = 1;
-            public int ta_name2 = 1;
-            public int ta_name3 = 1;
-            public int ta_name4 = 1;
-
-            public int da_name1 = 1;
-            public int da_name2 = 1;
-            public int da_name3 = 1;
-            public int da_name4 = 1;
-            //Отель             
-            public int otel1 = 2;
-            public int otel2 = 1;
-            public int otel3 = 1;
-            //Экскурси
-            public int ex1 = 3;
-            public int ex2 = 1;
-            public int ex3 = 1;
-
-           
+            public int egipet;
+            public int turciya;
+            public int tayland;
+            public int daminikana;
+            public country(DataRow dataRow)
+            {
+                egipet = (int)dataRow[2];
+                turciya = (int)dataRow[2];
+                tayland = (int)dataRow[2];
+                daminikana = (int)dataRow[2];
+            }
 
         }
+       
 
         private void pictureBox1_MouseLeave(object sender, EventArgs e)
         {
@@ -134,8 +116,12 @@ namespace Kurse
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `turs` WHERE `id` = 1", db.getConnection());
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+            var konstruktorEgipet = new country(table.Rows[0]);
 
-            var konstruktorEgipet = new Const();
+
             this.Hide();
             Консруктор_Египет conE = new Консруктор_Египет(konstruktorEgipet, authorizedUser, userUpdete);
             conE.Show();

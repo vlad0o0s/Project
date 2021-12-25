@@ -14,7 +14,7 @@ namespace Kurse
     public partial class Консруктор_Египет : Form
     {
         private User authorizedUser;
-        private Конструктор.Const konstruktorEgipet;
+        private Конструктор.country konstruktorEgipet;
         private Аккаунт.UserUpdete userUpdete;
         DB db = new DB();
 
@@ -28,12 +28,12 @@ namespace Kurse
             InitializeComponent();
         }
 
-        public Консруктор_Египет(Конструктор.Const konstruktorEgipet, User authorizedUser, Аккаунт.UserUpdete userUpdete)
+        public Консруктор_Египет(Конструктор.country konstruktorEgipet, User authorizedUser, Аккаунт.UserUpdete userUpdete)
         {
             InitializeComponent();
             this.authorizedUser = authorizedUser;
             this.konstruktorEgipet = konstruktorEgipet;
-            this.userUpdete = userUpdete;
+            this.userUpdete = userUpdete; 
         }
 
         private void Консруктор_Египет_Load(object sender, EventArgs e)
@@ -49,41 +49,51 @@ namespace Kurse
             int b = 0;
             int c = 0;
             int d = 0;
+
             if (comboBox1.Text == "Каир")
             {
-                b = konstruktorEgipet.e_name1;
+                MySqlCommand command = new MySqlCommand("SELECT * FROM `city` WHERE `id` = 1", db.getConnection());
+                adapter.SelectCommand = command;
+                adapter.Fill(table);
+                b = Convert.ToInt32(table.Rows[0]);
             }
             if (comboBox1.Text == "Александрия")
             {
-                b = konstruktorEgipet.e_name2;
+                MySqlCommand command = new MySqlCommand("SELECT * FROM `city` WHERE `id` = 2", db.getConnection());
+                adapter.SelectCommand = command;
+                adapter.Fill(table);
+                b = Convert.ToInt32(table.Rows[2]);
             }
             if (comboBox1.Text == "Гиза")
             {
-                b = konstruktorEgipet.e_name3;
+                MySqlCommand command = new MySqlCommand("SELECT * FROM `city` WHERE `id` = 3", db.getConnection());
+                adapter.SelectCommand = command;
+                adapter.Fill(table);
+                b = Convert.ToInt32(table.Rows[2]);
             }
             if (comboBox2.Text == "Обычного класса")
             {
-                c = konstruktorEgipet.otel1;
+                c = 0;
             }
             if (comboBox2.Text == "Среднего класса")
             {
-                c = konstruktorEgipet.otel2;
+                c = 0;
             }
             if (comboBox2.Text == "Высокого класса")
             {
-                c = konstruktorEgipet.otel3;
+                c = 0;
             }
             if (comboBox3.Text == "1")
             {
-                d = konstruktorEgipet.ex1;
+                d = 0;
             }
             if (comboBox3.Text == "2")
             {
-                d = konstruktorEgipet.ex2;
+                d = 0;
             }
             if (comboBox3.Text == "4")
             {
-                d = konstruktorEgipet.ex3;
+                d = 0;
             }
             int res = 0;
             res = a + b + c + d;
@@ -124,5 +134,6 @@ namespace Kurse
                 аккаунт.Show();
             }
         }
+      
     }
 }
