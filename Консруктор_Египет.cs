@@ -44,94 +44,112 @@ namespace Kurse
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            int proverka = 0; 
             int a = konstruktorEgipet.egipet;
             int b = 0;
             int c = 0;
             int d = 0;
-
-            if (comboBox1.Text == "Каир")
+            if (proverka == 0) // убрать если не получиться сделать возврат к началу
             {
-                MySqlCommand command = new MySqlCommand("SELECT * FROM `city` WHERE `id` = 1", db.getConnection());
-                adapter.SelectCommand = command;
-                adapter.Fill(table);
-                b = Convert.ToInt32(table.Rows[0]);
-            }
-            if (comboBox1.Text == "Александрия")
-            {
-                MySqlCommand command = new MySqlCommand("SELECT * FROM `city` WHERE `id` = 2", db.getConnection());
-                adapter.SelectCommand = command;
-                adapter.Fill(table);
-                b = Convert.ToInt32(table.Rows[2]);
-            }
-            if (comboBox1.Text == "Гиза")
-            {
-                MySqlCommand command = new MySqlCommand("SELECT * FROM `city` WHERE `id` = 3", db.getConnection());
-                adapter.SelectCommand = command;
-                adapter.Fill(table);
-                b = Convert.ToInt32(table.Rows[2]);
-            }
-            if (comboBox2.Text == "Обычного класса")
-            {
-                c = 0;
-            }
-            if (comboBox2.Text == "Среднего класса")
-            {
-                c = 0;
-            }
-            if (comboBox2.Text == "Высокого класса")
-            {
-                c = 0;
-            }
-            if (comboBox3.Text == "1")
-            {
-                d = 0;
-            }
-            if (comboBox3.Text == "2")
-            {
-                d = 0;
-            }
-            if (comboBox3.Text == "4")
-            {
-                d = 0;
-            }
-            int res = 0;
-            res = a + b + c + d;
-            string res1 = Convert.ToString(res);
-            DialogResult result = MessageBox.Show("Сумма к оплате " + res1 + " Руб.", "Стоимость тура", MessageBoxButtons.YesNo);
-            if (result == DialogResult.Yes)
-            {
-                int x = Convert.ToInt32(userUpdete.Balance);
-                int id_ob = Convert.ToInt32(authorizedUser.login);
-
-                if (res > x)
+                if (comboBox1.Text == "Каир")
                 {
-                    DialogResult result1 = MessageBox.Show("Недостаточно средств, пополнить кошелек?", "Ошибка", MessageBoxButtons.YesNo);
-                    if (result == DialogResult.Yes)
-                    {
-                        this.Hide();
-                        Аккаунт account = new Аккаунт(authorizedUser);
-                        account.Show();
-                    }
-                    return;
+                    proverka = 0;
+                    MySqlCommand command = new MySqlCommand("SELECT * FROM `city` WHERE `id` = 1", db.getConnection());
+                    adapter.SelectCommand = command;
+                    adapter.Fill(table);
+                    DataRow city = table.Rows[0];
+                    b = Convert.ToInt32(city["price"]);
                 }
-                int Res = x - res;
+                if (comboBox1.Text == "Александрия")
+                {
+                    proverka = 0;
+                    MySqlCommand command = new MySqlCommand("SELECT * FROM `city` WHERE `id` = 2", db.getConnection());
+                    adapter.SelectCommand = command;
+                    adapter.Fill(table);
+                    DataRow city = table.Rows[0];
+                    b = Convert.ToInt32(city["price"]);
+                }
+                if (comboBox1.Text == "Гиза")
+                {
+                    proverka = 0;
+                    MySqlCommand command = new MySqlCommand("SELECT * FROM `city` WHERE `id` = 3", db.getConnection());
+                    adapter.SelectCommand = command;
+                    adapter.Fill(table);
+                    DataRow city = table.Rows[0];
+                    b = Convert.ToInt32(city["price"]);
+                }
+                if (comboBox2.Text == "Обычного класса")
+                {
+                    c = 0;
+                }
+                if (comboBox2.Text == "Среднего класса")
+                {
+                    c = 0;
+                }
+                if (comboBox2.Text == "Высокого класса")
+                {
+                    c = 0;
+                }
+                if (comboBox3.Text == "1")
+                {
+                    d = 0;
+                }
+                if (comboBox3.Text == "2")
+                {
+                    d = 0;
+                }
+                if (comboBox3.Text == "4")
+                {
+                    d = 0;
+                }
+                int res = 0;
+                res = a + b + c + d;
+                string res1 = Convert.ToString(res);
+                DialogResult result = MessageBox.Show("Сумма к оплате " + res1 + " Руб.", "Стоимость тура", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    int x = Convert.ToInt32(userUpdete.Balance);
+                    int id_ob = Convert.ToInt32(authorizedUser.login);
 
-                MySqlCommand command = new MySqlCommand("UPDATE `users` SET `Balance` = @obrabotka WHERE `login` = @id_ob; UPDATE `users` SET `name_tur` = @name WHERE `login` = @id_ob; UPDATE `users` SET `Город` = @city WHERE `login` = @id_ob; UPDATE `users` SET `Отель` = @hotel WHERE `login` = @id_ob; UPDATE `users` SET `Экскурсии` = @ex WHERE `login` = @id_ob ", db.getConnection());
-                command.Parameters.Add("@obrabotka", MySqlDbType.VarChar).Value = Res;
-                command.Parameters.Add("@id_ob", MySqlDbType.VarChar).Value = id_ob;
-                command.Parameters.Add("@name", MySqlDbType.VarChar).Value = "Египет";
-                command.Parameters.Add("@city", MySqlDbType.VarChar).Value = comboBox1.Text;
-                command.Parameters.Add("@hotel", MySqlDbType.VarChar).Value = comboBox2.Text;
-                command.Parameters.Add("@ex", MySqlDbType.VarChar).Value = comboBox3.Text;
+                    if (res > x)
+                    {
+                        DialogResult result1 = MessageBox.Show("Недостаточно средств, пополнить кошелек?", "Ошибка", MessageBoxButtons.YesNo);
+                        if (result == DialogResult.Yes)
+                        {
+                            this.Hide();
+                            Аккаунт account = new Аккаунт(authorizedUser);
+                            account.Show();
+                        }
+                        return;
+                    }
 
-                adapter.SelectCommand = command;
-                adapter.Fill(table);
+                    int Res = x - res;
 
-                MessageBox.Show("Вы успешно купили тур по Египту");
-                this.Hide();
-                Аккаунт аккаунт = new Аккаунт(authorizedUser);
-                аккаунт.Show();
+                    MySqlCommand command = new MySqlCommand("UPDATE `users` SET `Balance` = @obrabotka WHERE `login` = @id_ob; UPDATE `users` SET `name_tur` = @name WHERE `login` = @id_ob; UPDATE `users` SET `Город` = @city WHERE `login` = @id_ob; UPDATE `users` SET `Отель` = @hotel WHERE `login` = @id_ob; UPDATE `users` SET `Экскурсии` = @ex WHERE `login` = @id_ob ", db.getConnection());
+                    command.Parameters.Add("@obrabotka", MySqlDbType.VarChar).Value = Res;
+                    command.Parameters.Add("@id_ob", MySqlDbType.VarChar).Value = id_ob;
+                    command.Parameters.Add("@name", MySqlDbType.VarChar).Value = "Египет";
+                    command.Parameters.Add("@city", MySqlDbType.VarChar).Value = comboBox1.Text;
+                    command.Parameters.Add("@hotel", MySqlDbType.VarChar).Value = comboBox2.Text;
+                    command.Parameters.Add("@ex", MySqlDbType.VarChar).Value = comboBox3.Text;
+
+                    adapter.SelectCommand = command;
+                    adapter.Fill(table);
+
+                    MessageBox.Show("Вы успешно купили тур по Египту");
+                    this.Hide();
+                    Аккаунт аккаунт = new Аккаунт(authorizedUser);
+                    аккаунт.Show();
+                }
+                else
+                {
+                    proverka = 1;
+                }
+            }
+            else
+            {
+                
+                return;
             }
         }
       
