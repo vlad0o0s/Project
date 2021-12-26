@@ -195,3 +195,4 @@ C:\Users\FlitP\Source\Repos\Project\obj\Debug\Kurse.pdb
 C:\Users\FlitP\Source\Repos\Project\obj\Debug\Kurse.Турция.resources
 C:\Users\FlitP\Source\Repos\Project\obj\Debug\Kurse.Доминикана.resources
 C:\Users\FlitP\Source\Repos\Project\obj\Debug\Kurse.Тайланд.resources
+C:\Users\FlitP\Source\Repos\Project\obj\Debug\Kurse.Конструктор_Турция.resources

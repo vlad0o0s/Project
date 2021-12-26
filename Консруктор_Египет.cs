@@ -47,6 +47,7 @@ namespace Kurse
             int b = 0;
             int c = 0;
             int d = 0;
+            int day = 0;
                 if (comboBox1.Text == "Каир")
                 {
                     table.Clear();
@@ -137,9 +138,39 @@ namespace Kurse
                     DataRow city = table.Rows[0];
                     d = Convert.ToInt32(city["price"]);
                 }
-                int res = 0;
-                res = a + b + c + d;
-                string res1 = Convert.ToString(res);
+            if (comboBox4.Text == "3")
+            {
+
+                day = Convert.ToInt32(comboBox4.Text);
+            }
+            if (comboBox4.Text == "5")
+            {
+
+                day = Convert.ToInt32(comboBox4.Text);
+            }
+            if (comboBox4.Text == "7")
+            {
+
+                day = Convert.ToInt32(comboBox4.Text);
+            }
+            if (comboBox4.Text == "14")
+            {
+
+                day = Convert.ToInt32(comboBox4.Text);
+            }
+            if (comboBox4.Text == "21")
+            {
+
+                day = Convert.ToInt32(comboBox4.Text);
+            }
+            if (comboBox4.Text == "30")
+            {
+
+                day = Convert.ToInt32(comboBox4.Text);
+            }
+            int res = 0;
+            res = a + b + c * day + d; //a - билеты в страну b - город c - отель d - экскурсии day - кол-во дней
+            string res1 = Convert.ToString(res);
                 DialogResult result = MessageBox.Show("Сумма к оплате " + res1 + " Руб.", "Стоимость тура", MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {

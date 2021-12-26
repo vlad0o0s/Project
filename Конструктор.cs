@@ -126,6 +126,42 @@ namespace Kurse
             Консруктор_Египет conE = new Консруктор_Египет(konstruktorEgipet, authorizedUser, userUpdete);
             conE.Show();
         }
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `country` WHERE `id` = 2", db.getConnection());
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+            var konstruktorEgipet = new country(table.Rows[0]);
+
+
+            this.Hide();
+            Конструктор_Турция conE = new Конструктор_Турция(konstruktorEgipet, authorizedUser, userUpdete);
+            conE.Show();
+        }
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `country` WHERE `id` = 3", db.getConnection());
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+            var konstruktorEgipet = new country(table.Rows[0]);
+
+
+            this.Hide();
+            Консруктор_Египет conE = new Консруктор_Египет(konstruktorEgipet, authorizedUser, userUpdete);
+            conE.Show();
+        }
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `country` WHERE `id` = 4", db.getConnection());
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+            var konstruktorEgipet = new country(table.Rows[0]);
+
+
+            this.Hide();
+            Консруктор_Египет conE = new Консруктор_Египет(konstruktorEgipet, authorizedUser, userUpdete);
+            conE.Show();
+        }
     }
 }
 

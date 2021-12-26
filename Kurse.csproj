@@ -131,6 +131,12 @@
     <Compile Include="Конструктор.Designer.cs">
       <DependentUpon>Конструктор.cs</DependentUpon>
     </Compile>
+    <Compile Include="Конструктор_Турция.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Конструктор_Турция.Designer.cs">
+      <DependentUpon>Конструктор_Турция.cs</DependentUpon>
+    </Compile>
     <Compile Include="Пополнение.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Конструктор.resx">
       <DependentUpon>Конструктор.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Конструктор_Турция.resx">
+      <DependentUpon>Конструктор_Турция.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Пополнение.resx">
       <DependentUpon>Пополнение.cs</DependentUpon>
