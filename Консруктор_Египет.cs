@@ -38,22 +38,18 @@ namespace Kurse
 
         private void Консруктор_Египет_Load(object sender, EventArgs e)
         {
-            label4.Text = userUpdete.Balance;
             
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int proverka = 0; 
             int a = konstruktorEgipet.egipet;
             int b = 0;
             int c = 0;
             int d = 0;
-            if (proverka == 0) // убрать если не получиться сделать возврат к началу
-            {
                 if (comboBox1.Text == "Каир")
                 {
-                    proverka = 0;
+                    table.Clear();
                     MySqlCommand command = new MySqlCommand("SELECT * FROM `city` WHERE `id` = 1", db.getConnection());
                     adapter.SelectCommand = command;
                     adapter.Fill(table);
@@ -62,7 +58,7 @@ namespace Kurse
                 }
                 if (comboBox1.Text == "Александрия")
                 {
-                    proverka = 0;
+                    table.Clear();
                     MySqlCommand command = new MySqlCommand("SELECT * FROM `city` WHERE `id` = 2", db.getConnection());
                     adapter.SelectCommand = command;
                     adapter.Fill(table);
@@ -71,7 +67,7 @@ namespace Kurse
                 }
                 if (comboBox1.Text == "Гиза")
                 {
-                    proverka = 0;
+                    table.Clear();
                     MySqlCommand command = new MySqlCommand("SELECT * FROM `city` WHERE `id` = 3", db.getConnection());
                     adapter.SelectCommand = command;
                     adapter.Fill(table);
@@ -80,27 +76,66 @@ namespace Kurse
                 }
                 if (comboBox2.Text == "Обычного класса")
                 {
-                    c = 0;
+                    table.Clear();
+                    MySqlCommand command = new MySqlCommand("SELECT * FROM `hotel` WHERE `id` = 1", db.getConnection());
+                    adapter.SelectCommand = command;
+                    adapter.Fill(table);
+                    DataRow city = table.Rows[0];
+                    c = Convert.ToInt32(city["price"]);
                 }
                 if (comboBox2.Text == "Среднего класса")
                 {
-                    c = 0;
+                    table.Clear();
+                    MySqlCommand command = new MySqlCommand("SELECT * FROM `hotel` WHERE `id` = 2", db.getConnection());
+                    adapter.SelectCommand = command;
+                    adapter.Fill(table);
+                    DataRow city = table.Rows[0];
+                    c = Convert.ToInt32(city["price"]);
                 }
                 if (comboBox2.Text == "Высокого класса")
                 {
-                    c = 0;
+                    table.Clear();
+                    MySqlCommand command = new MySqlCommand("SELECT * FROM `hotel` WHERE `id` = 3", db.getConnection());
+                    adapter.SelectCommand = command;
+                    adapter.Fill(table);
+                    DataRow city = table.Rows[0];
+                    c = Convert.ToInt32(city["price"]);
                 }
-                if (comboBox3.Text == "1")
+                if (comboBox3.Text == "Нет")
                 {
-                    d = 0;
+                    table.Clear();
+                    MySqlCommand command = new MySqlCommand("SELECT * FROM `ex` WHERE `id` = 4", db.getConnection());
+                    adapter.SelectCommand = command;
+                    adapter.Fill(table);
+                    DataRow city = table.Rows[0];
+                    d = Convert.ToInt32(city["price"]);
                 }
-                if (comboBox3.Text == "2")
+                if (comboBox3.Text == "Личный гид на один день")
                 {
-                    d = 0;
+                    table.Clear();
+                    MySqlCommand command = new MySqlCommand("SELECT * FROM `ex` WHERE `id` = 1", db.getConnection());
+                    adapter.SelectCommand = command;
+                    adapter.Fill(table);
+                    DataRow city = table.Rows[0];
+                    d = Convert.ToInt32(city["price"]);
                 }
-                if (comboBox3.Text == "4")
+                if (comboBox3.Text == "Оазис Бахария из Каира")
                 {
-                    d = 0;
+                    table.Clear();
+                    MySqlCommand command = new MySqlCommand("SELECT * FROM `ex` WHERE `id` = 2", db.getConnection());
+                    adapter.SelectCommand = command;
+                    adapter.Fill(table);
+                    DataRow city = table.Rows[0];
+                    d = Convert.ToInt32(city["price"]);
+                }
+                if (comboBox3.Text == "В Луксор на самолёте")
+                {
+                    table.Clear();
+                    MySqlCommand command = new MySqlCommand("SELECT * FROM `ex` WHERE `id` = 3", db.getConnection());
+                    adapter.SelectCommand = command;
+                    adapter.Fill(table);
+                    DataRow city = table.Rows[0];
+                    d = Convert.ToInt32(city["price"]);
                 }
                 int res = 0;
                 res = a + b + c + d;
@@ -141,17 +176,13 @@ namespace Kurse
                     Аккаунт аккаунт = new Аккаунт(authorizedUser);
                     аккаунт.Show();
                 }
-                else
-                {
-                    proverka = 1;
-                }
-            }
-            else
-            {
-                
-                return;
-            }
         }
-      
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Аккаунт аккаунт = new Аккаунт(authorizedUser);
+            аккаунт.Show();
+        }
     }
 }
