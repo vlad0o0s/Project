@@ -147,7 +147,7 @@ namespace Kurse
 
 
             this.Hide();
-            Консруктор_Египет conE = new Консруктор_Египет(konstruktorEgipet, authorizedUser, userUpdete);
+            Констрктор_Тайланд conE = new Констрктор_Тайланд(konstruktorEgipet, authorizedUser, userUpdete);
             conE.Show();
         }
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -159,7 +159,7 @@ namespace Kurse
 
 
             this.Hide();
-            Консруктор_Египет conE = new Консруктор_Египет(konstruktorEgipet, authorizedUser, userUpdete);
+            Конструктор_Доминикана conE = new Конструктор_Доминикана(konstruktorEgipet, authorizedUser, userUpdete);
             conE.Show();
         }
     }

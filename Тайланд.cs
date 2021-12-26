@@ -108,10 +108,14 @@ namespace Kurse
                 }
                 int Res = x - y;
 
-                MySqlCommand command = new MySqlCommand("UPDATE `users` SET `Balance` = @obrabotka WHERE `login` = @id_ob; UPDATE `users` SET `name_tur` = @name WHERE `login` = @id_ob; UPDATE `users` SET `Город` = Каир WHERE `login` = @id_ob; UPDATE `users` SET `Отель` = Обычного класса WHERE `login` = @id_ob; UPDATE `users` SET `Экскурсии` = Нет WHERE `login` = @id_ob;", db.getConnection());
+                MySqlCommand command = new MySqlCommand("UPDATE `users` SET `Balance` = @obrabotka WHERE `login` = @id_ob; UPDATE `users` SET `name_tur` = @name WHERE `login` = @id_ob; UPDATE `users` SET `Город` = @city WHERE `login` = @id_ob; UPDATE `users` SET `Отель` = @hotel WHERE `login` = @id_ob; UPDATE `users` SET `Экскурсии` = @ex WHERE `login` = @id_ob; UPDATE `users` SET `days` = @day WHERE `login` = @id_ob;", db.getConnection());
                 command.Parameters.Add("@obrabotka", MySqlDbType.VarChar).Value = Res;
                 command.Parameters.Add("@id_ob", MySqlDbType.VarChar).Value = id_ob;
                 command.Parameters.Add("@name", MySqlDbType.VarChar).Value = label3.Text;
+                command.Parameters.Add("@day", MySqlDbType.VarChar).Value = "7";
+                command.Parameters.Add("@city", MySqlDbType.VarChar).Value = "Бангкок";
+                command.Parameters.Add("@ex", MySqlDbType.VarChar).Value = "Нет";
+                command.Parameters.Add("@hotel", MySqlDbType.VarChar).Value = "Обычного класса";
 
                 adapter.SelectCommand = command;
                 adapter.Fill(table);

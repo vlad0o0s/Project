@@ -191,15 +191,16 @@ namespace Kurse
 
                     int Res = x - res;
 
-                    MySqlCommand command = new MySqlCommand("UPDATE `users` SET `Balance` = @obrabotka WHERE `login` = @id_ob; UPDATE `users` SET `name_tur` = @name WHERE `login` = @id_ob; UPDATE `users` SET `Город` = @city WHERE `login` = @id_ob; UPDATE `users` SET `Отель` = @hotel WHERE `login` = @id_ob; UPDATE `users` SET `Экскурсии` = @ex WHERE `login` = @id_ob ", db.getConnection());
+                    MySqlCommand command = new MySqlCommand("UPDATE `users` SET `Balance` = @obrabotka WHERE `login` = @id_ob; UPDATE `users` SET `name_tur` = @name WHERE `login` = @id_ob; UPDATE `users` SET `Город` = @city WHERE `login` = @id_ob; UPDATE `users` SET `Отель` = @hotel WHERE `login` = @id_ob; UPDATE `users` SET `Экскурсии` = @ex WHERE `login` = @id_ob; UPDATE `users` SET `days` = @day WHERE `login` = @id_ob ", db.getConnection());
                     command.Parameters.Add("@obrabotka", MySqlDbType.VarChar).Value = Res;
                     command.Parameters.Add("@id_ob", MySqlDbType.VarChar).Value = id_ob;
                     command.Parameters.Add("@name", MySqlDbType.VarChar).Value = "Египет";
                     command.Parameters.Add("@city", MySqlDbType.VarChar).Value = comboBox1.Text;
                     command.Parameters.Add("@hotel", MySqlDbType.VarChar).Value = comboBox2.Text;
                     command.Parameters.Add("@ex", MySqlDbType.VarChar).Value = comboBox3.Text;
+                command.Parameters.Add("@day", MySqlDbType.VarChar).Value = comboBox4.Text;
 
-                    adapter.SelectCommand = command;
+                adapter.SelectCommand = command;
                     adapter.Fill(table);
 
                     MessageBox.Show("Вы успешно купили тур по Египту");

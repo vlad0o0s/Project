@@ -52,6 +52,7 @@ namespace Kurse
             label8.Text = userUpdete.city;
             label9.Text = userUpdete.hotel;
             label10.Text = userUpdete.ex;
+            label12.Text = Convert.ToString(userUpdete.day);
 
         }
 
@@ -98,6 +99,7 @@ namespace Kurse
             public string city;
             public string hotel;
             public string ex;
+            public int day;
             public UserUpdete(DataRow dataRow)
             {
                 Balance = dataRow[4] as string;
@@ -105,6 +107,7 @@ namespace Kurse
                 city = dataRow[6] as string;
                 hotel = dataRow[7] as string;
                 ex = dataRow[8] as string;
+                day = (int)dataRow[9];
             }
         }
     }

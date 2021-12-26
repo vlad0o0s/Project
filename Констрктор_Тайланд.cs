@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Kurse
 {
-    public partial class Конструктор_Турция : Form
+    public partial class Констрктор_Тайланд : Form
     {
         private User authorizedUser;
         private Конструктор.country konstruktorEgipet;
@@ -23,12 +23,12 @@ namespace Kurse
         MySqlDataAdapter adapter = new MySqlDataAdapter();
 
 
-        public Конструктор_Турция()
+        public Констрктор_Тайланд()
         {
             InitializeComponent();
         }
 
-        public Конструктор_Турция(Конструктор.country konstruktorEgipet, User authorizedUser, Аккаунт.UserUpdete userUpdete)
+        public Констрктор_Тайланд(Конструктор.country konstruktorEgipet, User authorizedUser, Аккаунт.UserUpdete userUpdete)
         {
             InitializeComponent();
             this.authorizedUser = authorizedUser;
@@ -36,7 +36,7 @@ namespace Kurse
             this.userUpdete = userUpdete;
         }
 
-        private void Конструктор_Турция_Load(object sender, EventArgs e)
+        private void Констрктор_Тайланд_Load(object sender, EventArgs e)
         {
 
         }
@@ -48,28 +48,28 @@ namespace Kurse
             int c = 0;
             int d = 0;
             int day = 0;
-            if (comboBox1.Text == "Стамбул")
+            if (comboBox1.Text == "Бангкок")
             {
                 table.Clear();
-                MySqlCommand command = new MySqlCommand("SELECT * FROM `city` WHERE `id` = 4", db.getConnection());
+                MySqlCommand command = new MySqlCommand("SELECT * FROM `city` WHERE `id` = 7", db.getConnection());
                 adapter.SelectCommand = command;
                 adapter.Fill(table);
                 DataRow city = table.Rows[0];
                 b = Convert.ToInt32(city["price"]);
             }
-            if (comboBox1.Text == "Александрия")
+            if (comboBox1.Text == "Нонтхабури")
             {
                 table.Clear();
-                MySqlCommand command = new MySqlCommand("SELECT * FROM `city` WHERE `id` = 5", db.getConnection());
+                MySqlCommand command = new MySqlCommand("SELECT * FROM `city` WHERE `id` = 8", db.getConnection());
                 adapter.SelectCommand = command;
                 adapter.Fill(table);
                 DataRow city = table.Rows[0];
                 b = Convert.ToInt32(city["price"]);
             }
-            if (comboBox1.Text == "Гиза")
+            if (comboBox1.Text == "Удонтхани")
             {
                 table.Clear();
-                MySqlCommand command = new MySqlCommand("SELECT * FROM `city` WHERE `id` = 6", db.getConnection());
+                MySqlCommand command = new MySqlCommand("SELECT * FROM `city` WHERE `id` = 9", db.getConnection());
                 adapter.SelectCommand = command;
                 adapter.Fill(table);
                 DataRow city = table.Rows[0];
@@ -111,28 +111,28 @@ namespace Kurse
                 DataRow city = table.Rows[0];
                 d = Convert.ToInt32(city["price"]);
             }
-            if (comboBox3.Text == "Романтика на Босфоре: прогулка на яхте класса люкс")
+            if (comboBox3.Text == "Первое свидание с Пхукетом")
             {
                 table.Clear();
-                MySqlCommand command = new MySqlCommand("SELECT * FROM `ex` WHERE `id` = 5", db.getConnection());
+                MySqlCommand command = new MySqlCommand("SELECT * FROM `ex` WHERE `id` = 8", db.getConnection());
                 adapter.SelectCommand = command;
                 adapter.Fill(table);
                 DataRow city = table.Rows[0];
                 d = Convert.ToInt32(city["price"]);
             }
-            if (comboBox3.Text == "«Великолепный век». Любовь Роксоланы")
+            if (comboBox3.Text == "В гостях у Пхраканонгского привидения")
             {
                 table.Clear();
-                MySqlCommand command = new MySqlCommand("SELECT * FROM `ex` WHERE `id` = 6", db.getConnection());
+                MySqlCommand command = new MySqlCommand("SELECT * FROM `ex` WHERE `id` = 9", db.getConnection());
                 adapter.SelectCommand = command;
                 adapter.Fill(table);
                 DataRow city = table.Rows[0];
                 d = Convert.ToInt32(city["price"]);
             }
-            if (comboBox3.Text == "Фотопрогулка «Стамбул — город контрастов»")
+            if (comboBox3.Text == "Всё великолепие Пхукета за 1 день!")
             {
                 table.Clear();
-                MySqlCommand command = new MySqlCommand("SELECT * FROM `ex` WHERE `id` = 7", db.getConnection());
+                MySqlCommand command = new MySqlCommand("SELECT * FROM `ex` WHERE `id` = 10", db.getConnection());
                 adapter.SelectCommand = command;
                 adapter.Fill(table);
                 DataRow city = table.Rows[0];
@@ -140,7 +140,7 @@ namespace Kurse
             }
             if (comboBox4.Text == "3")
             {
-                
+
                 day = Convert.ToInt32(comboBox4.Text);
             }
             if (comboBox4.Text == "5")
@@ -169,7 +169,7 @@ namespace Kurse
                 day = Convert.ToInt32(comboBox4.Text);
             }
             int res = 0;
-            res = a + b + c * day + d;
+            res = a + b + c * day + d; //a - билеты в страну b - город c - отель d - экскурсии day - кол-во дней
             string res1 = Convert.ToString(res);
             DialogResult result = MessageBox.Show("Сумма к оплате " + res1 + " Руб.", "Стоимость тура", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
@@ -194,7 +194,7 @@ namespace Kurse
                 MySqlCommand command = new MySqlCommand("UPDATE `users` SET `Balance` = @obrabotka WHERE `login` = @id_ob; UPDATE `users` SET `name_tur` = @name WHERE `login` = @id_ob; UPDATE `users` SET `Город` = @city WHERE `login` = @id_ob; UPDATE `users` SET `Отель` = @hotel WHERE `login` = @id_ob; UPDATE `users` SET `Экскурсии` = @ex WHERE `login` = @id_ob; UPDATE `users` SET `days` = @day WHERE `login` = @id_ob ", db.getConnection());
                 command.Parameters.Add("@obrabotka", MySqlDbType.VarChar).Value = Res;
                 command.Parameters.Add("@id_ob", MySqlDbType.VarChar).Value = id_ob;
-                command.Parameters.Add("@name", MySqlDbType.VarChar).Value = "Турция";
+                command.Parameters.Add("@name", MySqlDbType.VarChar).Value = "Тайланд";
                 command.Parameters.Add("@city", MySqlDbType.VarChar).Value = comboBox1.Text;
                 command.Parameters.Add("@hotel", MySqlDbType.VarChar).Value = comboBox2.Text;
                 command.Parameters.Add("@ex", MySqlDbType.VarChar).Value = comboBox3.Text;
@@ -203,7 +203,7 @@ namespace Kurse
                 adapter.SelectCommand = command;
                 adapter.Fill(table);
 
-                MessageBox.Show("Вы успешно купили тур по Турции");
+                MessageBox.Show("Вы успешно купили тур по Тайланду");
                 this.Hide();
                 Аккаунт аккаунт = new Аккаунт(authorizedUser);
                 аккаунт.Show();
