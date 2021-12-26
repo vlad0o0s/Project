@@ -47,6 +47,30 @@ namespace Kurse
             eg.Show();
 
         }
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            Турция eg = new Турция(authorizedUser, userUpdete);
+            eg.Show();
+
+        }
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            Тайланд eg = new Тайланд(authorizedUser, userUpdete);
+            eg.Show();
+
+        }
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            Доминикана eg = new Доминикана(authorizedUser, userUpdete);
+            eg.Show();
+
+        }
 
         private void pictureBox1_MouseLeave(object sender, EventArgs e)
         {

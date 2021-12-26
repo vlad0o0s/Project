@@ -63,6 +63,36 @@ namespace Kurse.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap d972842c70bce8b4c77fcb9f9e0cad1a {
+            get {
+                object obj = ResourceManager.GetObject("d972842c70bce8b4c77fcb9f9e0cad1a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Dominican {
+            get {
+                object obj = ResourceManager.GetObject("Dominican", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap th_1 {
+            get {
+                object obj = ResourceManager.GetObject("th_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Доминикана {
             get {
                 object obj = ResourceManager.GetObject("Доминикана", resourceCulture);

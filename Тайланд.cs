@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Kurse
 {
-    public partial class Египет : Form
+    public partial class Тайланд : Form
     {
         DB db = new DB();
 
@@ -22,12 +22,12 @@ namespace Kurse
         private User authorizedUser;
         private Аккаунт.UserUpdete userUpdete;
 
-        public Египет()
+        public Тайланд()
         {
             InitializeComponent();
         }
 
-        public Египет(User authorizedUser, Аккаунт.UserUpdete userUpdete)
+        public Тайланд(User authorizedUser, Аккаунт.UserUpdete userUpdete)
         {
             InitializeComponent();
             this.authorizedUser = authorizedUser;
@@ -35,17 +35,17 @@ namespace Kurse
 
         }
 
-        private void Египет_Load(object sender, EventArgs e)
+        private void Тайланд_Load(object sender, EventArgs e)
         {
 
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `ready_turs` WHERE id = 1", db.getConnection());
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `ready_turs` WHERE id = 3", db.getConnection());
 
             adapter.SelectCommand = command;
             adapter.Fill(table);
             var TursPrice = new Turs(table.Rows[0]);
             string t1 = TursPrice.Price.ToString();
             label1.Text = t1 + " Руб.";
-            Balance.Text = userUpdete.Balance + " Руб."; 
+            Balance.Text = userUpdete.Balance + " Руб.";
 
         }
 
@@ -56,7 +56,7 @@ namespace Kurse
             public Turs(DataRow dataRow)
             {
                 Price = (int)dataRow[2];
-                
+
             }
         }
 
@@ -84,7 +84,7 @@ namespace Kurse
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DialogResult result1 = MessageBox.Show("Купить тур по Египту?", "Подтвержение", MessageBoxButtons.YesNo);
+            DialogResult result1 = MessageBox.Show("Купить тур по Тайланду?", "Подтвержение", MessageBoxButtons.YesNo);
             if (result1 == DialogResult.Yes)
             {
                 var TursPrice = new Turs(table.Rows[0]);
@@ -116,12 +116,11 @@ namespace Kurse
                 adapter.SelectCommand = command;
                 adapter.Fill(table);
 
-                MessageBox.Show("Вы успешно купили тур по Египту");
+                MessageBox.Show("Вы успешно купили тур по Тайланду");
                 this.Hide();
                 Аккаунт аккаунт = new Аккаунт(authorizedUser);
                 аккаунт.Show();
             }
         }
-        
     }
 }

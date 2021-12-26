@@ -117,29 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="th_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\th_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Тайланд" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Тайланд.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Турция" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Турция.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Египет1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Египет1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Египет" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Египет.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="d972842c70bce8b4c77fcb9f9e0cad1a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\d972842c70bce8b4c77fcb9f9e0cad1a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Доминикана" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Доминикана.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Dominican" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dominican.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Доминиканская Республика сегодня по праву считается лучшей страной Карибского бассейна.
+
+Доминикана со своими пляжами в стиле «баунти» является одним из крупнейших мировых туристических центров. 
+
+Это излюбленное место для обеспеченных любителей экзотики в окружении фантастически красивой природы.</value>
   </data>
 </root>

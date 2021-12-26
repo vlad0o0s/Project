@@ -116,7 +116,7 @@ namespace Kurse
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `turs` WHERE `id` = 1", db.getConnection());
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `country` WHERE `id` = 1", db.getConnection());
             adapter.SelectCommand = command;
             adapter.Fill(table);
             var konstruktorEgipet = new country(table.Rows[0]);

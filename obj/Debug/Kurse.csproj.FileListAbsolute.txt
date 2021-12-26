@@ -192,3 +192,6 @@ C:\Users\FlitP\Source\Repos\Project\obj\Debug\Kurse.csproj.CoreCompileInputs.cac
 C:\Users\FlitP\Source\Repos\Project\obj\Debug\Kurse.csproj.CopyComplete
 C:\Users\FlitP\Source\Repos\Project\obj\Debug\Kurse.exe
 C:\Users\FlitP\Source\Repos\Project\obj\Debug\Kurse.pdb
+C:\Users\FlitP\Source\Repos\Project\obj\Debug\Kurse.Турция.resources
+C:\Users\FlitP\Source\Repos\Project\obj\Debug\Kurse.Доминикана.resources
+C:\Users\FlitP\Source\Repos\Project\obj\Debug\Kurse.Тайланд.resources

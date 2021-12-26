@@ -107,6 +107,12 @@
     <Compile Include="Готовые_туры.Designer.cs">
       <DependentUpon>Готовые_туры.cs</DependentUpon>
     </Compile>
+    <Compile Include="Доминикана.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Доминикана.Designer.cs">
+      <DependentUpon>Доминикана.cs</DependentUpon>
+    </Compile>
     <Compile Include="Египет.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,18 @@
     <Compile Include="Регистрация.Designer.cs">
       <DependentUpon>Регистрация.cs</DependentUpon>
     </Compile>
+    <Compile Include="Тайланд.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Тайланд.Designer.cs">
+      <DependentUpon>Тайланд.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Турция.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Турция.Designer.cs">
+      <DependentUpon>Турция.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Авторизация.resx">
       <DependentUpon>Авторизация.cs</DependentUpon>
     </EmbeddedResource>
@@ -156,6 +174,9 @@
     <EmbeddedResource Include="Готовые_туры.resx">
       <DependentUpon>Готовые_туры.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Доминикана.resx">
+      <DependentUpon>Доминикана.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Египет.resx">
       <DependentUpon>Египет.cs</DependentUpon>
     </EmbeddedResource>
@@ -170,6 +191,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Регистрация.resx">
       <DependentUpon>Регистрация.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Тайланд.resx">
+      <DependentUpon>Тайланд.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Турция.resx">
+      <DependentUpon>Турция.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -202,6 +229,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Доминикана.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d972842c70bce8b4c77fcb9f9e0cad1a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\th_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dominican.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
