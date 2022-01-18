@@ -47,7 +47,7 @@ namespace Kurse
 
             label2.Text = "Здравствуйте, " + authorizedUser.FIO;
 
-            Balanc.Text = userUpdete.Balance + " Руб.";
+            Balanc.Text = Convert.ToString(userUpdete.balance) + " Руб.";
             label4.Text = userUpdete.turs;
             label8.Text = userUpdete.city;
             label9.Text = userUpdete.hotel;
@@ -94,7 +94,7 @@ namespace Kurse
         }
         public class UserUpdete
         {
-            public string Balance;
+            public int balance;
             public string turs;
             public string city;
             public string hotel;
@@ -102,12 +102,12 @@ namespace Kurse
             public int day;
             public UserUpdete(DataRow dataRow)
             {
-                Balance = dataRow[4] as string;
+                balance = (int)dataRow[4];
                 turs = dataRow[5] as string;
                 city = dataRow[6] as string;
                 hotel = dataRow[7] as string;
                 ex = dataRow[8] as string;
-                day = (int)dataRow[9];
+                day = Convert.ToInt32(dataRow[9]);
             }
         }
     }

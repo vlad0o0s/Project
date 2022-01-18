@@ -174,7 +174,7 @@ namespace Kurse
             DialogResult result = MessageBox.Show("Сумма к оплате " + res1 + " Руб.", "Стоимость тура", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                int x = Convert.ToInt32(userUpdete.Balance);
+                int x = Convert.ToInt32(userUpdete.balance);
                 int id_ob = Convert.ToInt32(authorizedUser.login);
 
                 if (res > x)
@@ -191,7 +191,7 @@ namespace Kurse
 
                 int Res = x - res;
 
-                MySqlCommand command = new MySqlCommand("UPDATE `users` SET `Balance` = @obrabotka WHERE `login` = @id_ob; UPDATE `users` SET `name_tur` = @name WHERE `login` = @id_ob; UPDATE `users` SET `Город` = @city WHERE `login` = @id_ob; UPDATE `users` SET `Отель` = @hotel WHERE `login` = @id_ob; UPDATE `users` SET `Экскурсии` = @ex WHERE `login` = @id_ob; UPDATE `users` SET `days` = @day WHERE `login` = @id_ob ", db.getConnection());
+                MySqlCommand command = new MySqlCommand("UPDATE `users` SET `balance` = @obrabotka WHERE `login` = @id_ob; UPDATE `users` SET `turs` = @name WHERE `login` = @id_ob; UPDATE `users` SET `city` = @city WHERE `login` = @id_ob; UPDATE `users` SET `hotel` = @hotel WHERE `login` = @id_ob; UPDATE `users` SET `ex` = @ex WHERE `login` = @id_ob; UPDATE `users` SET `day` = @day WHERE `login` = @id_ob;", db.getConnection());
                 command.Parameters.Add("@obrabotka", MySqlDbType.VarChar).Value = Res;
                 command.Parameters.Add("@id_ob", MySqlDbType.VarChar).Value = id_ob;
                 command.Parameters.Add("@name", MySqlDbType.VarChar).Value = "Тайланд";
@@ -215,6 +215,6 @@ namespace Kurse
             this.Hide();
             Аккаунт аккаунт = new Аккаунт(authorizedUser);
             аккаунт.Show();
-        }
+        } 
     }
 }

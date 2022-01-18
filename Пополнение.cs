@@ -34,12 +34,17 @@ namespace Kurse
         }
         private void Пополнение_Load(object sender, EventArgs e)
         {
-            Console.WriteLine(userUpdete.Balance);
+            Console.WriteLine(userUpdete.balance);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int y = Convert.ToInt32(userUpdete.Balance);
+            if (textBox1.Text == "")
+            {
+                MessageBox.Show("Введите сумму");
+                return;
+            }
+            int y = Convert.ToInt32(userUpdete.balance);
             int x = Convert.ToInt32(textBox1.Text);
 
             int next = y + x;
@@ -51,7 +56,7 @@ namespace Kurse
             }
             
             string id_ob = authorizedUser.login;
-            MySqlCommand command = new MySqlCommand("UPDATE `users` SET `Balance` = @popolnenie WHERE `login` = @id_ob", db.getConnection());
+            MySqlCommand command = new MySqlCommand("UPDATE `users` SET `balance` = @popolnenie WHERE `login` = @id_ob", db.getConnection());
             command.Parameters.Add("@popolnenie", MySqlDbType.VarChar).Value = next;
             command.Parameters.Add("@id_ob", MySqlDbType.VarChar).Value = id_ob;
             adapter.SelectCommand = command;
